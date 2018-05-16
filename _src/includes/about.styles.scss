@@ -1,19 +1,30 @@
 @import '../globals';
 
 .about {
-    display: flex;
-    justify-content: center;
-    width: $desktopWidth;
+    width: 100%;
     padding: $sectionPadding;
 
+    &__section-inner {
+        padding: $sectionPaddingInner;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image-wrap {
+        flex: 0 1 50%;
+    }
+
     &__image {
-        width: 512px;
-        height: 512px;
+        display: block;
+        width: 100%;
+        max-width: 512px;
+        margin-left: auto;
     }
 
     &__wrapper {
         display: flex;
         flex-direction: column;
+        flex-basis: 50%;
         justify-content: center;
         padding: 24px 0 24px 32px;
         text-align: left;
@@ -34,21 +45,6 @@
     }
 
     &__linkedin {
-        display: inline-block;
-        width: 180px;           // TODO: Shouldnt be exact...
-        color: white;
-        background-color: $colorCrimson;
-        padding: 10px 16px;
-        border-radius: 2px;
-        user-select: none;
-        cursor: pointer;
-        transition: background-color 0.15s linear;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: $fontSizeSmall;
-
-        &:hover {
-            background-color: $colorCrimson - #222222;
-        }
+        @include button(white, $colorPrimary);
     }
 }

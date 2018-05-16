@@ -1,5 +1,8 @@
 $desktopWidth: 1024px;
+$mobileWidth: 764px;            // TODO: React to mobile devices  
+
 $sectionPadding: 55px 0;
+$sectionPaddingInner: 0 55px;
 
 $fontSizeLarge: 28px;
 $fontSizeRegular: 18px;
@@ -7,4 +10,22 @@ $fontSizeSmall: 13px;
 
 $colorGrey: #444444;
 $colorGreyLight: #888888;
-$colorCrimson: #DC143C;
+$colorPrimary: #00ab44;
+
+@mixin button($textColor, $backgroundColor) {
+    color: $textColor;
+    background-color: $backgroundColor;
+    padding: 10px 16px;
+    margin-right: auto;
+    border-radius: 2px;
+    user-select: none;
+    cursor: pointer;
+    transition: background-color 0.15s linear;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $fontSizeSmall;
+
+    &:hover {
+        background-color: $backgroundColor - #222222;
+    }
+}
