@@ -1,0 +1,30 @@
+@import '../globals';
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: 96px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: $colorCrimson;
+
+    &__button {
+        height: 100%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.300);
+            -webkit-transition: background-color 0.25s linear;
+            -ms-transition: background-color 0.25s linear;
+            transition: background-color 0.25s linear;
+        }
+    }
+
+    &__button-text {
+        padding: 0 20px;
+        font-size: 18px;
+        position: relative;
+        top: 50%;
+    }
+}

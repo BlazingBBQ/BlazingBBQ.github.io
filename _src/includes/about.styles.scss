@@ -1,0 +1,54 @@
+@import '../globals';
+
+.about {
+    display: flex;
+    justify-content: center;
+    width: $desktopWidth;
+    padding: $sectionPadding;
+
+    &__image {
+        width: 512px;
+        height: 512px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px 0 24px 32px;
+        text-align: left;
+    }
+
+    &__title {
+        font-size: $fontSizeLarge;
+        color: $colorGrey;
+        font-weight: 550;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        font-size: $fontSizeRegular;
+        color: $colorGreyLight;
+        font-weight: lighter;
+        margin-bottom: 20px;
+    }
+
+    &__linkedin {
+        display: inline-block;
+        width: 180px;           // TODO: Shouldnt be exact...
+        color: white;
+        background-color: $colorCrimson;
+        padding: 10px 16px;
+        border-radius: 2px;
+        user-select: none;
+        cursor: pointer;
+        transition: background-color 0.15s linear;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: $fontSizeSmall;
+
+        &:hover {
+            background-color: $colorCrimson - #222222;
+        }
+    }
+}
