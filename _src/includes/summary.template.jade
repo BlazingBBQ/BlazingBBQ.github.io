@@ -1,7 +1,7 @@
-mixin summaryItem(iconPath, title, content)
+mixin summaryItem(icon, title, content)
     .summary__item-container
         .summary__image-wrap
-            img.summary__image(src=iconPath)
+            i.material-icons.summary__icon= icon
         .summary__text-container
             .summary__item-title= title
             .summary__item-content= content
@@ -10,27 +10,27 @@ mixin summaryItem(iconPath, title, content)
     .summary__section-inner
         .summary__column-container
             +summaryItem(
-                "https://scontent.fykz1-1.fna.fbcdn.net/v/t1.0-9/20914747_2009729259258539_3271154919935973320_n.jpg?_nc_cat=0&_nc_eui2=AeExMTpsnuSadpI_3BgB8VpsYyJrA1JLr4IXPGl5TzhEr6EbDpri9A7OQ3ee7qY_XlQDMeGeFYuPcoLc0CHeb7v4NwmQ9OHjtfk8WYpHyjt3Aw&oh=f4884b8710e6df42bf5de5db4bbcb945&oe=5B8F5FD3",
-                "Hello Simon",
-                "Simon's content")
+                "phonelink",
+                "Front-End Technologies",
+                "Experience with front-end technologies through multiple personal projects and a coop position as a Mobile Application Developer")
             +summaryItem(
-                "https://scontent.fykz1-1.fna.fbcdn.net/v/t1.0-9/20914747_2009729259258539_3271154919935973320_n.jpg?_nc_cat=0&_nc_eui2=AeExMTpsnuSadpI_3BgB8VpsYyJrA1JLr4IXPGl5TzhEr6EbDpri9A7OQ3ee7qY_XlQDMeGeFYuPcoLc0CHeb7v4NwmQ9OHjtfk8WYpHyjt3Aw&oh=f4884b8710e6df42bf5de5db4bbcb945&oe=5B8F5FD3",
-                "Hello Simon",
-                "Simon's content")
+                "dashboard",
+                "User Interface Design",
+                "Proficiency developing user interfaces culminating in a study tool for the House of Commons Page Program built in Java")
             +summaryItem(
-                "https://scontent.fykz1-1.fna.fbcdn.net/v/t1.0-9/20914747_2009729259258539_3271154919935973320_n.jpg?_nc_cat=0&_nc_eui2=AeExMTpsnuSadpI_3BgB8VpsYyJrA1JLr4IXPGl5TzhEr6EbDpri9A7OQ3ee7qY_XlQDMeGeFYuPcoLc0CHeb7v4NwmQ9OHjtfk8WYpHyjt3Aw&oh=f4884b8710e6df42bf5de5db4bbcb945&oe=5B8F5FD3",
-                "Hello Simon",
-                "Simon's content")
+                "build",
+                "Robotics Systems",
+                "Experience designing and building robotic systems through participation in various robotic competitions")
         .summary__column-container
             +summaryItem(
-                "https://scontent.fykz1-1.fna.fbcdn.net/v/t1.0-9/20914747_2009729259258539_3271154919935973320_n.jpg?_nc_cat=0&_nc_eui2=AeExMTpsnuSadpI_3BgB8VpsYyJrA1JLr4IXPGl5TzhEr6EbDpri9A7OQ3ee7qY_XlQDMeGeFYuPcoLc0CHeb7v4NwmQ9OHjtfk8WYpHyjt3Aw&oh=f4884b8710e6df42bf5de5db4bbcb945&oe=5B8F5FD3",
-                "Hello Simon",
-                "Simon's content")
+                "message",
+                "Strong Communication",
+                "Excellent communication skills in both French and English which has allowed the development of meaningful relationships with customers and coworkers")
             +summaryItem(
-                "https://scontent.fykz1-1.fna.fbcdn.net/v/t1.0-9/20914747_2009729259258539_3271154919935973320_n.jpg?_nc_cat=0&_nc_eui2=AeExMTpsnuSadpI_3BgB8VpsYyJrA1JLr4IXPGl5TzhEr6EbDpri9A7OQ3ee7qY_XlQDMeGeFYuPcoLc0CHeb7v4NwmQ9OHjtfk8WYpHyjt3Aw&oh=f4884b8710e6df42bf5de5db4bbcb945&oe=5B8F5FD3",
-                "Hello Simon",
-                "Simon's content")
+                "group",
+                "Team-Work",
+                "Strong team-work abilities demonstrated through multiple years organizing events, and working a number of jobs where effective communication is crucial")
             +summaryItem(
-                "https://scontent.fykz1-1.fna.fbcdn.net/v/t1.0-9/20914747_2009729259258539_3271154919935973320_n.jpg?_nc_cat=0&_nc_eui2=AeExMTpsnuSadpI_3BgB8VpsYyJrA1JLr4IXPGl5TzhEr6EbDpri9A7OQ3ee7qY_XlQDMeGeFYuPcoLc0CHeb7v4NwmQ9OHjtfk8WYpHyjt3Aw&oh=f4884b8710e6df42bf5de5db4bbcb945&oe=5B8F5FD3",
-                "Hello Simon",
-                "Simon's content")
+                "whatshot",
+                "Self Starter",
+                "Fast learner and independant worker who loves simple, elegant solutions to complex problems")

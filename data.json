@@ -1,8 +1,0 @@
-{
-    "globals": {
-        "nav-el": ["Me", "Summary", "Projects", "Work Experience", "Education", "Fun"],
-        "about-image-path": "https://scontent.fykz1-1.fna.fbcdn.net/v/t1.0-9/20914747_2009729259258539_3271154919935973320_n.jpg?_nc_cat=0&_nc_eui2=AeExMTpsnuSadpI_3BgB8VpsYyJrA1JLr4IXPGl5TzhEr6EbDpri9A7OQ3ee7qY_XlQDMeGeFYuPcoLc0CHeb7v4NwmQ9OHjtfk8WYpHyjt3Aw&oh=f4884b8710e6df42bf5de5db4bbcb945&oe=5B8F5FD3",
-        "about-title": "simon",
-        "about-content": "So much about simon"
-    }
-}

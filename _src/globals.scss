@@ -12,7 +12,9 @@ $fontSizeSmall: 13px;
 
 $colorGrey: #444444;
 $colorGreyLight: #888888;
+$colorGreyLighter: #cccccc;
 $colorPrimary: #00ab44;
+$colorComplimentary: #ab0033;
 
 @mixin button($textColor, $backgroundColor) {
     color: $textColor;
