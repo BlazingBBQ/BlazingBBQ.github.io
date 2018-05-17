@@ -3,6 +3,8 @@ $mobileWidth: 764px;            // TODO: React to mobile devices
 
 $sectionPadding: 55px 0;
 $sectionPaddingInner: 0 55px;
+$sectionPaddingMobile: 35px 0;
+$sectionPaddingInnerMobile: 0 24px;
 
 $fontSizeLarge: 28px;
 $fontSizeRegular: 18px;
@@ -27,5 +29,26 @@ $colorPrimary: #00ab44;
 
     &:hover {
         background-color: $backgroundColor - #222222;
+    }
+}
+
+@mixin section() {
+    width: 100%;
+    padding: $sectionPadding;
+
+    @media only screen and (max-width: $mobileWidth) {
+        padding: $sectionPaddingMobile;
+    }
+
+    &__section-inner {
+        padding: $sectionPaddingInner;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        @media only screen and (max-width: $mobileWidth) {
+            padding: $sectionPaddingInnerMobile;
+            flex-direction: column;
+        }
     }
 }

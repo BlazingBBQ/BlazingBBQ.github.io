@@ -1,0 +1,56 @@
+@import '../globals';
+
+.summary {
+    @include section();
+
+    &__column-container {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        justify-content: center;
+        max-width: $desktopWidth / 2;
+        margin: 0 8px;
+        text-align: left;
+
+        @media screen and (max-width: $mobileWidth) {
+            padding: 0;
+        }
+    }
+
+    &__item-container {
+        display: flex;
+        margin: 16px 0;
+    }
+
+    &__image-wrap {
+        flex-grow: 1;
+        max-width: $desktopWidth / 10;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+    }
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80%;
+        padding: 8px 0 8px 16px;
+        text-align: left;
+    }
+
+    &__item-title {
+        font-size: $fontSizeRegular;
+        color: $colorGrey;
+        font-weight: 550;
+        margin-bottom: 4px;
+    }
+
+    &__item-content {
+        font-size: $fontSizeSmall;
+        color: $colorGreyLight;
+        font-weight: lighter;
+        margin-bottom: 4px;
+    }
+}
