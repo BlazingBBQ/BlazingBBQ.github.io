@@ -1,0 +1,28 @@
+mixin projectItem(title, content, stack, buttonText, link, imageLink)
+    .projects__item-container
+        .projects__image-wrap
+            img.projects__image(src=imageLink)
+        .projects__text-wrap
+            .projects__header-container
+                .projects__title= title
+                .projects__stack= stack
+            .projects__content= content
+            a.projects__link(href=link)= buttonText
+
+
+.projects
+    .projects__section-inner
+        +projectItem(
+            "Node.js Web Game (ChaoticMP)",
+            "Currently developing a web game using a Node.js server and Sockets.io to connect multiple players to a single game world. Rendering client-side graphics using HTML5 Canvas, and a simple graphics specification format. Created a scalable component definition system which allows fast and easy addition of new game objects with different behaviours.",
+            "Node.js, Socket.io, Html5 Canvas",
+            "Check it out!",
+            "https://github.com/BlazingBBQ/ChaoticMP",
+            "https://i.imgur.com/ArN48vy.png")
+        +projectItem(
+            "Node.js Web Game (ChaoticMP)",
+            "Currently developing a web game using a Node.js server and Sockets.io to connect multiple players to a single game world. Rendering client-side graphics using HTML5 Canvas, and a simple graphics specification format. Created a scalable component definition system which allows fast and easy addition of new game objects with different behaviours.",
+            "Node.js, Socket.io, Html5 Canvas",
+            "Check it out!",
+            "https://github.com/BlazingBBQ/ChaoticMP",
+            "https://i.imgur.com/ArN48vy.png")
