@@ -51,6 +51,7 @@ $colorComplimentary: #ab0033;
         @media only screen and (max-width: $mobileWidth) {
             padding: $sectionPaddingInnerMobile;
             flex-direction: column;
+            align-items: center;
         }
     }
 }

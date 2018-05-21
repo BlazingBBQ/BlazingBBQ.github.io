@@ -6,6 +6,10 @@
     &__image-wrap {
         flex: 0 1 50%;
         max-width: $desktopWidth / 2;
+
+        @media screen and (max-width: $mobileWidth) {
+            max-width: 100vw;
+        }
     }
 
     &__image {
@@ -29,6 +33,7 @@
 
         @media screen and (max-width: $mobileWidth) {
             padding-left: 0;
+            max-width: 100vw;
         }
     }
 

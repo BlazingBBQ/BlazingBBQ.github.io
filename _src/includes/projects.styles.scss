@@ -11,6 +11,13 @@
         display: flex;
         align-items: center;
         margin: 16px 0;
+        justify-content: center;
+        padding: 8px;
+        transition: box-shadow 0.15s linear;
+
+        &:hover {
+            box-shadow: 0px 0px 4px 2px #cccccc;
+        }
 
         @media only screen and (max-width: $mobileWidth) {
             flex-direction: column;
@@ -49,32 +56,20 @@
     &__header-container {
         display: flex;
 
-        @media screen and (max-width: $mobileWidth) {
-            flex-direction: column;
-        }
+        flex-direction: column;
     }
 
     &__title {
         font-size: $fontSizeRegular;
         color: $colorGrey;
         font-weight: 550;
-        margin-bottom: 4px;
-
-        @media screen and (max-width: $mobileWidth) {
-            margin-bottom: 0;
-        }
     }
 
     &__stack {
         font-size: $fontSizeSmall;
         color: $colorGreyLighter;
         font-weight: lighter;
-        margin-top: 5px;
-        margin-left: auto;
-
-        @media screen and (max-width: $mobileWidth) {
-            margin: 0 0 8px 0;
-        }
+        margin-bottom: 8px;
     }
 
     &__content {
