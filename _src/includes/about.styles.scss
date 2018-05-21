@@ -53,5 +53,9 @@
 
     &__linkedin {
         @include button(white, $colorPrimary);
+
+        @media screen and (max-width: $mobileWidth) {
+            margin: 0 auto;
+        }
     }
 }

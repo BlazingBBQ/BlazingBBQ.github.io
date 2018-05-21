@@ -1,5 +1,11 @@
+script.
+    function goTo(to) {
+        $('html,body').animate({
+            scrollTop: $(to).offset().top},
+            'medium');
+    }
+
 .nav
-    //- .nav__image
-    each element in ["Me", "Summary", "Projects", "Work Experience", "Education", "Fun"]
-        .nav__button
-            span.nav__button-text #{element}
+    each element in [{ name: "About", destination: ".about"}, { name: "Summary", destination: ".summary"}, { name: "Experience", destination: ".projects"}]
+        .nav__button(onclick="goTo('#{element.destination}')")
+            span.nav__button-text #{element.name}
