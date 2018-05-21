@@ -1,0 +1,21 @@
+@import '../globals';
+
+.footer {
+    @include section();
+    background-color: $colorPrimary;
+
+    &__section-inner {
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: $fontSizeLarge;
+        color: white;
+    }
+
+    &__contact-info {
+        font-size: $fontSizeSmall;
+        color: #EEEEEE;
+        font-weight: lighter;
+    }
+}
