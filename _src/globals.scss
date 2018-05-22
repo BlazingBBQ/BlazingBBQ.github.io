@@ -39,7 +39,7 @@ $colorComplimentary: #ab0033;
     width: 100%;
     padding: $sectionPadding;
 
-    @media only screen and (max-width: $mobileWidth) {
+    @media only screen and (max-device-width: $mobileWidth) {
         padding: $sectionPaddingMobile;
     }
 
@@ -50,7 +50,7 @@ $colorComplimentary: #ab0033;
         justify-content: center;
         align-items: center;
 
-        @media only screen and (max-width: $mobileWidth) {
+        @media only screen and (max-device-width: $mobileWidth) {
             padding: $sectionPaddingInnerMobile;
             flex-direction: column;
             align-items: center;

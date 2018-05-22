@@ -7,7 +7,7 @@
         flex: 0 1 50%;
         max-width: $desktopWidth / 2;
 
-        @media screen and (max-width: $mobileWidth) {
+        @media only screen and (max-device-width: $mobileWidth) {
             max-width: 100vw;
         }
     }
@@ -16,7 +16,7 @@
         display: block;
         width: 100%;
 
-        @media only screen and (max-width: $mobileWidth) {
+        @media only screen and (max-device-width: $mobileWidth) {
             max-width: 100vw;
             margin: 0 auto;
         }
@@ -25,14 +25,14 @@
     &__wrapper {
         display: flex;
         flex-direction: column;
-        flex-basis: 50%;
+        flex: 0 1 50%;
         justify-content: center;
         max-width: $desktopWidth / 2;
         padding: 24px 0 24px 32px;
         text-align: left;
 
-        @media screen and (max-width: $mobileWidth) {
-            padding-left: 0;
+        @media only screen and (max-device-width: $mobileWidth) {
+            padding: 24px 8px;
             max-width: 100vw;
         }
     }
@@ -54,7 +54,7 @@
     &__linkedin {
         @include button(white, $colorPrimary);
 
-        @media screen and (max-width: $mobileWidth) {
+        @media only screen and (max-device-width: $mobileWidth) {
             margin: 0 auto;
         }
     }
