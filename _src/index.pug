@@ -1,8 +1,9 @@
-extends _layout.jade
+extends ./_layout.pug
 
-include ./includes/nav.template.jade
-include ./includes/about.template.jade
-include ./includes/summary.template.jade
-include ./includes/separator.template.jade
-include ./includes/projects.template.jade
-include ./includes/footer.template.jade
+block content
+  include ./includes/nav.template.pug
+  include ./includes/about.template.pug
+  include ./includes/summary.template.pug
+  include ./includes/separator.template.pug
+  include ./includes/projects.template.pug
+  include ./includes/footer.template.pug
