@@ -1,4 +1,4 @@
-mixin projectItem(title, content, stack, buttonText, link, imageLink)
+mixin projectItem(title, content, stack, imageUrl, links)
     .projects__item-container
         .projects__image-wrap
             img.projects__image(src=imageLink)
@@ -7,8 +7,8 @@ mixin projectItem(title, content, stack, buttonText, link, imageLink)
                 .projects__title= title
                 .projects__stack= stack
             .projects__content= content
-            if link
-                a.projects__link(href=link)= buttonText
+            each link in links
+                a.projects__link(href=link.href)= link.text
 
 
 .projects
@@ -18,20 +18,31 @@ mixin projectItem(title, content, stack, buttonText, link, imageLink)
             "Node.js Web Game (ChaoticMP)",
             "Currently developing a web game using a Node.js server and Sockets.io to connect multiple players to a single game world. Rendering client-side graphics using HTML5 Canvas, and a simple graphics specification format. Created a scalable component definition system which allows fast and easy addition of new game objects with different behaviours.",
             "Node.js, Socket.io, Html5 Canvas",
-            "Check it out!",
-            "https://github.com/BlazingBBQ/ChaoticMP",
-            "images/ChaoticMP-Preview.png")
+            "images/ChaoticMP-Preview.png",
+            [{
+                text: "View on Github",
+                href: "https://github.com/BlazingBBQ/ChaoticMP",
+            },
+            {
+                text: "Try it out",
+                href: "chapticmp.simoncousineau.com",
+            }])
         +projectItem(
             "House of Commons Page Program Quiz",
             "Developed an efficient study tool using the Java programming language in order to help Pages effectively recognize and name the 338 Members of Parliament. Designed an aesthetically pleasing interface utilizing Swing libraries to enhance the user experience.",
             "Java, Swing",
-            "Check it out!",
-            "https://github.com/BlazingBBQ/HouseOfCommonsQuiz",
-            "images/HOCQuiz-Preview.png")
+            "images/HOCQuiz-Preview.png",
+            [{
+                text: "View on Github",
+                href: "https://github.com/BlazingBBQ/HouseOfCommonsQuiz",
+            },
+            {
+                text: "Try it out",
+                href: "hocq.simoncousineau.com/legacy",
+            }])
         +projectItem(
             "Mobile Application Developer (Coop) - Kinaxis",
             "Brought to life new feature ideas suggested by customers and product managers using cutting edge technologies and frameworks, such as Typescript, Html, Scss, and AngularJS. Ensured code was well tested by writing Jasmine and Protractor tests, as well as keeping existing Selenium tests up to date. Solved complex implementation and optimization problems with other team members to ensure optimal performance. Demonstrated strong communication abilities through daily team meetings and regular feature demonstration days. Properly managed time while working independently in order to meet established deadlines.",
             "AngularJs, Typescript, Scss, Jasmine",
-            "",
-            "",
-            "images/Kinaxis-Preview.png")
+            "images/Kinaxis-Preview.png",
+            [])
