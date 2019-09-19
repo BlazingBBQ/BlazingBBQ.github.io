@@ -1,14 +1,15 @@
 mixin projectItem(title, content, stack, imageUrl, links)
     .projects__item-container
         .projects__image-wrap
-            img.projects__image(src=imageLink)
+            img.projects__image(src=imageUrl)
         .projects__text-wrap
             .projects__header-container
                 .projects__title= title
                 .projects__stack= stack
             .projects__content= content
-            each link in links
-                a.projects__link(href=link.href)= link.text
+            .projects__link-wrap
+                each link in links
+                    a.projects__link(href=link.href, target="_blank")= link.text
 
 
 .projects
