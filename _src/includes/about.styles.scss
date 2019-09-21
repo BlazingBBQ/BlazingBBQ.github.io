@@ -51,11 +51,19 @@
         margin-bottom: 20px;
     }
 
-    &__linkedin {
-        @include button(white, $colorPrimary);
-
+    &__link-container {
         @media only screen and (max-device-width: $mobileWidth) {
-            margin: 0 auto;
+          display: flex;
+          justify-content: center;
+        }
+    }
+
+    &__link {
+        @include button(white, $colorPrimary);
+        margin: 0 4px;
+
+        &:first-of-type {
+          margin: 0;
         }
     }
 }

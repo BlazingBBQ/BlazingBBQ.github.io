@@ -84,7 +84,8 @@
     }
 
     &__link-wrap {
-      margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 
     &__link {

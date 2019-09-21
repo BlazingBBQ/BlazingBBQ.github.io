@@ -72,7 +72,11 @@
     color: #888888;
     font-weight: lighter;
     margin-bottom: 20px; }
-  .about__linkedin {
+  @media only screen and (max-device-width: 764px) {
+    .about__link-container {
+      display: flex;
+      justify-content: center; } }
+  .about__link {
     color: white;
     background-color: #00ab44;
     padding: 10px 16px;
@@ -83,12 +87,12 @@
     transition: background-color 0.15s linear;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 13px; }
-    .about__linkedin:hover {
+    font-size: 13px;
+    margin: 0 4px; }
+    .about__link:hover {
       background-color: #008922; }
-    @media only screen and (max-device-width: 764px) {
-      .about__linkedin {
-        margin: 0 auto; } }
+    .about__link:first-of-type {
+      margin: 0; }
 
 .summary {
   width: 100%;
@@ -229,7 +233,8 @@
     font-weight: lighter;
     margin-bottom: 24px; }
   .projects__link-wrap {
-    margin: 0 auto; }
+    display: flex;
+    justify-content: center; }
   .projects__link {
     color: white;
     background-color: #00ab44;
