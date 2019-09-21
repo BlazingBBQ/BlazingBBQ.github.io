@@ -1,6 +1,6 @@
 ### Description
 
-This is Simon Cousineau's personal portfolio website. Can be found at [https://simoncousineau.com]().
+This is Simon Cousineau's personal portfolio website. Can be found at [simoncousineau.com](https://simoncousineau.com).
 
 ### Development
 
