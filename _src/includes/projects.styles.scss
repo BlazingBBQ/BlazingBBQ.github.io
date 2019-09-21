@@ -85,10 +85,10 @@
 
     &__link-wrap {
       margin: 0 auto;
-      display: block;
     }
 
     &__link {
         @include button(white, $colorPrimary);
+        margin: 0 4px;
     }
 }

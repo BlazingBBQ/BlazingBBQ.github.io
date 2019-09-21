@@ -229,8 +229,7 @@
     font-weight: lighter;
     margin-bottom: 24px; }
   .projects__link-wrap {
-    margin: 0 auto;
-    display: block; }
+    margin: 0 auto; }
   .projects__link {
     color: white;
     background-color: #00ab44;
@@ -242,7 +241,8 @@
     transition: background-color 0.15s linear;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 13px; }
+    font-size: 13px;
+    margin: 0 4px; }
     .projects__link:hover {
       background-color: #008922; }
 
