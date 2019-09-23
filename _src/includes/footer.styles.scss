@@ -18,4 +18,10 @@
         color: #EEEEEE;
         font-weight: lighter;
     }
+
+    &__icon {
+      font-size: 13px !important;
+      position: relative;
+      top: 2px;
+    }
 }

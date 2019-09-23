@@ -289,6 +289,10 @@
     font-size: 13px;
     color: #EEEEEE;
     font-weight: lighter; }
+  .footer__icon {
+    font-size: 13px !important;
+    position: relative;
+    top: 2px; }
 
 body {
   display: flex;
