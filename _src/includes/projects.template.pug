@@ -18,33 +18,80 @@ mixin projectItem(title, content, stack, imageUrl, links)
     +separator("Projects")
     .projects__section-inner
         +projectItem(
-            "Node.js Web Game (ChaoticMP)",
-            "Currently developing a web game using a Node.js server and Sockets.io to connect multiple players to a single game world. Rendering client-side graphics using HTML5 Canvas, and a simple graphics specification format. Created a scalable component definition system which allows fast and easy addition of new game objects with different behaviours.",
-            "Node.js, Socket.io, Html5 Canvas",
+            "Node.js Web Game (Chaotic-Engine)",
+            "Developed a web game engine using a Node.js server and Socket.io to connect multiple players to a single game world. Client-side rendering is done using HTML5 Canvas, and a custom graphics specification format. A simple, inheritance-based component definition system is used to facilitate the creation of new game objects.",
+            "Typescript, Node.js, Socket.io, Html5 Canvas",
             "images/ChaoticMP-Preview.png",
             [{
                 text: "View on Github",
-                href: "https://github.com/BlazingBBQ/ChaoticMP",
+                href: "https://github.com/BlazingBBQ/Chaotic-Engine",
             },
             {
                 text: "Try it out",
                 href: "https://chaoticmp.simoncousineau.com",
             }])
         +projectItem(
-            "House of Commons Page Program Quiz",
-            "Developed an efficient study tool using the Java programming language in order to help Pages effectively recognize and name the 338 Members of Parliament. Designed an aesthetically pleasing interface utilizing Swing libraries to enhance the user experience.",
+            "Automatic Test Scaffolder (QAssistant)",
+            "Developed a VSCode extension that automatically creates test files and scaffolds test cases. Implemented a flexible configuration which allows support for multiple programming languages.",
+            "Typescript, VSCode Api",
+            "",
+            [{
+                text: "View on Github",
+                href: "https://github.com/BlazingBBQ/QAssistant",
+            }])
+        +projectItem(
+            "House of Commons Quiz Game",
+            "Developed an efficient study tool in Java to help House of Common Pages effectively recognize and name all 338 Members of Parliament. Used Swing to implement the user interface.",
             "Java, Swing",
             "images/HOCQuiz-Preview.png",
             [{
                 text: "View on Github",
                 href: "https://github.com/BlazingBBQ/HouseOfCommonsQuiz",
             }])
+        +projectItem(
+            "House of Commons Quiz Game v2 (hocq2)",
+            "Redesigned and implemented the House of Commons MP Quiz game in Ruby on Rails, in order to meet demands for ease of access and use, and to facilitate deployment of new features.",
+            "Ruby on Rails",
+            "",
+            [{
+                text: "View on Github",
+                href: "https://github.com/BlazingBBQ/hocq2",
+            },
+            {
+                text: "Try it out",
+                href: "https://hocq.simoncousineau.com",
+            }])
+        +projectItem(
+            "MIDI Controller",
+            "Developed a MIDI (Musical Instrument Digital Interface) controller using C++ for the Onion Omega board. Wrote a simple MIDI interpreter in Python to process incoming MIDI commands.",
+            "C++, Python",
+            "",
+            [])
+        +projectItem(
+            "XY-Platform",
+            "Currently developing two-axis precision-controlled system, capable of navigating user entered coordinates, using the Texas Instruments MSP430FR4133 board and C, as part of my Prototyping and Instrumentation course project.",
+            "C",
+            "",
+            [])
+
     #experience
     +separator("Experience")
     .projects__section-inner
         +projectItem(
+            "Back-End Developer Intern - Shopify",
+            "Worked on internal tools, such as the internal wiki and employee directory integration, in Ruby on Rails. Planned and implemented a Slack integration for these tools, while keeping scalability and upcoming features in mind. Contributed to crucial internal tools projects, including Shopify’s Internal App Engine for rapid app prototyping and Shopify’s research portal. Demonstrated strong communication abilities by effectively working with many in-house and remote coworkers, and through regular feature demonstrations.",
+            "Ruby on Rails, React, GraphQL, Slack API",
+            "images/Shopify-Preview.png",
+            [])
+        +projectItem(
+            "Front-End Developer Intern - Shopify",
+            "Developed enterprise commerce software solutions for merchants around the world, using  React, Typescript, Html and Scss. Tested application functionality and ensured adequate test coverage using Jest and Enzyme testing frameworks. Maintained internal software tools to enable fast and reliable development. Communicated with team members to coordinate and solve complex problems. Documented best practices when designing and implementing software applications.",
+            "React, Typescript, Scss, Jest, Enzyme",
+            "images/Shopify-Preview.png",
+            [])
+        +projectItem(
             "Mobile Application Developer (Coop) - Kinaxis",
             "Brought to life new feature ideas suggested by customers and product managers using cutting edge technologies and frameworks, such as Typescript, Html, Scss, and AngularJS. Ensured code was well tested by writing Jasmine and Protractor tests, as well as keeping existing Selenium tests up to date. Solved complex implementation and optimization problems with other team members to ensure optimal performance. Demonstrated strong communication abilities through daily team meetings and regular feature demonstration days. Properly managed time while working independently in order to meet established deadlines.",
-            "AngularJs, Typescript, Scss, Jasmine",
+            "AngularJs, Typescript, Scss, Jasmine, Protractor",
             "images/Kinaxis-Preview.png",
             [])
