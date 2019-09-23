@@ -1,3 +1,5 @@
+include ./separator.template.pug
+
 mixin projectItem(title, content, stack, imageUrl, links)
     .projects__item-container
         .projects__image-wrap
@@ -13,8 +15,8 @@ mixin projectItem(title, content, stack, imageUrl, links)
 
 
 .projects
+    +separator("Projects")
     .projects__section-inner
-        // Needs section title
         +projectItem(
             "Node.js Web Game (ChaoticMP)",
             "Currently developing a web game using a Node.js server and Sockets.io to connect multiple players to a single game world. Rendering client-side graphics using HTML5 Canvas, and a simple graphics specification format. Created a scalable component definition system which allows fast and easy addition of new game objects with different behaviours.",
@@ -36,11 +38,10 @@ mixin projectItem(title, content, stack, imageUrl, links)
             [{
                 text: "View on Github",
                 href: "https://github.com/BlazingBBQ/HouseOfCommonsQuiz",
-            },
-            {
-                text: "Try it out",
-                href: "https://hocq.simoncousineau.com/legacy",
             }])
+    #experience
+    +separator("Experience")
+    .projects__section-inner
         +projectItem(
             "Mobile Application Developer (Coop) - Kinaxis",
             "Brought to life new feature ideas suggested by customers and product managers using cutting edge technologies and frameworks, such as Typescript, Html, Scss, and AngularJS. Ensured code was well tested by writing Jasmine and Protractor tests, as well as keeping existing Selenium tests up to date. Solved complex implementation and optimization problems with other team members to ensure optimal performance. Demonstrated strong communication abilities through daily team meetings and regular feature demonstration days. Properly managed time while working independently in order to meet established deadlines.",

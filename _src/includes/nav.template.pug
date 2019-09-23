@@ -4,6 +4,6 @@ script.
     }
 
 .nav
-    each element in [{ name: "About", destination: ".about"}, { name: "Summary", destination: ".summary"}, { name: "Experience", destination: ".projects"}]
+    each element in [{ name: "About", destination: ".about"}, { name: "Summary", destination: ".summary"}, { name: "Projects", destination: ".projects"}, { name: "Experience", destination: "#experience"}]
         .nav__button(onclick=`goTo('${element.destination}')`)
             span.nav__button-text #{element.name}

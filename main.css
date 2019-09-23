@@ -155,10 +155,18 @@
     margin-bottom: 4px; }
 
 .separator {
-  margin: 1px 10%;
-  border-bottom: 1px solid #cccccc;
-  width: 60%;
-  max-width: 614.4px; }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .separator__header {
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0; }
+  .separator__line {
+    margin: 1px 5%;
+    border-bottom: 1px solid #cccccc;
+    flex-grow: 1; }
 
 .projects {
   width: 100%;
@@ -250,6 +258,8 @@
     margin: 0 4px; }
     .projects__link:hover {
       background-color: #008922; }
+  .projects #experience {
+    padding-top: 55px; }
 
 .footer {
   width: 100%;
