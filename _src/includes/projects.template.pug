@@ -18,6 +18,16 @@ mixin projectItem(title, content, stack, imageUrl, links)
     +separator("Projects")
     .projects__section-inner
         +projectItem(
+            "Hobby Kernel Dev",
+            "Currently developing a simple x86 kernel to explore topics in operating system design and computer architecture, allowing me to get hands-on experience with the OS development process.",
+            "C, Assembly",
+            "images/Kernel-Preview.png",
+            [{
+                text: "View on Github",
+                href: "https://github.com/BlazingBBQ/os_dev"
+            }]
+        )
+        +projectItem(
             "Node.js Web Game (Chaotic-Engine)",
             "Developed a web game engine using a Node.js server and Socket.io to connect multiple players to a single game world. Client-side rendering is done using HTML5 Canvas, and a custom graphics specification format. A simple, inheritance-based component definition system is used to facilitate the creation of new game objects.",
             "Typescript, Node.js, Socket.io, Html5 Canvas",
@@ -30,6 +40,21 @@ mixin projectItem(title, content, stack, imageUrl, links)
                 text: "Try it out",
                 href: "https://chaoticmp.simoncousineau.com",
             }])
+        +projectItem(
+            "XY-Platform",
+            "Developed a two-axis precision-controlled system, capable of navigating user entered coordinates, using the Texas Instruments MSP430FR4133 board and C, as part of my Prototyping and Instrumentation course project.",
+            "C",
+            "images/msp430fr4133-Datasheet.gif",
+            [{
+                text: "View on Github",
+                href: "https://github.com/BlazingBBQ/xyplatform"
+            }])
+        +projectItem(
+            "MIDI Controller",
+            "Developed a MIDI (Musical Instrument Digital Interface) controller using C++ for the Onion Omega board. Wrote a simple MIDI interpreter in Python to process incoming MIDI commands.",
+            "C++, Python",
+            "images/Onion-Omega-Preview.png",
+            [])
         +projectItem(
             "Automatic Test Scaffolder (QAssistant)",
             "Developed a VSCode extension that automatically creates test files and scaffolds test cases. Implemented a flexible configuration which allows support for multiple programming languages.",
@@ -44,18 +69,9 @@ mixin projectItem(title, content, stack, imageUrl, links)
                 href: "https://marketplace.visualstudio.com/items?itemName=blazingbbq.qassistant",
             }])
         +projectItem(
-            "House of Commons Quiz Game",
-            "Developed an efficient study tool in Java to help House of Common Pages effectively recognize and name all 338 Members of Parliament. Used Swing to implement the user interface.",
-            "Java, Swing",
-            "images/HOCQuiz-Preview.png",
-            [{
-                text: "View on Github",
-                href: "https://github.com/BlazingBBQ/HouseOfCommonsQuiz",
-            }])
-        +projectItem(
             "House of Commons Quiz Game v2 (hocq2)",
-            "Redesigned and implemented the House of Commons MP Quiz game in Ruby on Rails, in order to meet demands for ease of access and use, and to facilitate deployment of new features.",
-            "Ruby on Rails",
+            "Developed an efficient study tool in Ruby on Rails to help House of Commons Pages effectively recognize and name all 338 Members of Parliament. Initially built with Java and Swing but later converted to a web application for ease of access and deployment of new features.",
+            "Ruby on Rails, Java + Swing",
             "images/Hocq2-Preview.png",
             [{
                 text: "View on Github",
@@ -65,22 +81,17 @@ mixin projectItem(title, content, stack, imageUrl, links)
                 text: "Try it out",
                 href: "https://hocq.simoncousineau.com",
             }])
-        +projectItem(
-            "MIDI Controller",
-            "Developed a MIDI (Musical Instrument Digital Interface) controller using C++ for the Onion Omega board. Wrote a simple MIDI interpreter in Python to process incoming MIDI commands.",
-            "C++, Python",
-            "images/Onion-Omega-Preview.png",
-            [])
-        +projectItem(
-            "XY-Platform",
-            "Currently developing two-axis precision-controlled system, capable of navigating user entered coordinates, using the Texas Instruments MSP430FR4133 board and C, as part of my Prototyping and Instrumentation course project.",
-            "C",
-            "images/msp430fr4133-Datasheet.gif",
-            [])
 
     #experience
     +separator("Experience")
     .projects__section-inner
+        +projectItem(
+            "Cloud Platform Developer - Wind River Systems",
+            "Worked with open-source technologies such as Python, Kubernetes, Docker, Helm and StarlingX to develop platform monitoring and analytics for distributed systems. Implemented and configured data processing pipelines to filter, parse and pre-process system logs. Analyzed platform metrics and logs to determine critical information used for platform monitoring and fault management. Tested application changes on various platform configurations and under different conditions to ensure proper functioning even in fault scenarios. Reviewed preliminary notes and findings with experienced engineers in order to ensure all functional requirements were captured and to verify proposed methodologies. ",
+            "Python, Kubernetes, Docker, Helm, StarlingX",
+            "images/Windriver-Preview.png",
+            []
+        )
         +projectItem(
             "Back-End Developer Intern - Shopify",
             "Worked on internal tools, such as the internal wiki and employee directory integration, in Ruby on Rails. Planned and implemented a Slack integration for these tools, while keeping scalability and upcoming features in mind. Contributed to crucial internal tools projects, including Shopify’s Internal App Engine for rapid app prototyping and Shopify’s research portal. Demonstrated strong communication abilities by effectively working with many in-house and remote coworkers, and through regular feature demonstrations.",

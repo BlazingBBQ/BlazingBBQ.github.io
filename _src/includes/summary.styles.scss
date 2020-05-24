@@ -20,7 +20,8 @@
 
     &__item-container {
         display: flex;
-        margin: 16px 0;
+        margin: 8px 0;
+        min-height: 140px;
     }
 
     &__image-wrap {
