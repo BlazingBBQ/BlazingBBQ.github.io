@@ -28,18 +28,15 @@ mixin projectItem(title, content, stack, imageUrl, links)
             }]
         )
         +projectItem(
-            "Node.js Web Game (Chaotic-Engine)",
-            "Developed a web game engine using a Node.js server and Socket.io to connect multiple players to a single game world. Client-side rendering is done using HTML5 Canvas, and a custom graphics specification format. A simple, inheritance-based component definition system is used to facilitate the creation of new game objects.",
-            "Typescript, Node.js, Socket.io, Html5 Canvas",
-            "images/ChaoticMP-Preview.png",
+            "Intel 8080 Processor Emulator",
+            "Created an emulator for the Intel 8080 processor, with the goal of emulating Space Invaders. The emulator supports full instruction disassembly and emulation, as well as external hardware emulation.",
+            "C",
+            "images/Emulator-Preview.png",
             [{
                 text: "View on Github",
-                href: "https://github.com/BlazingBBQ/Chaotic-Engine",
-            },
-            {
-                text: "Try it out",
-                href: "https://chaoticmp.simoncousineau.com",
-            }])
+                href: "https://github.com/BlazingBBQ/8080_emulator"
+            }]
+        )
         +projectItem(
             "XY-Platform",
             "Developed a two-axis precision-controlled system, capable of navigating user entered coordinates, using the Texas Instruments MSP430FR4133 board and C, as part of my Prototyping and Instrumentation course project.",
@@ -55,6 +52,19 @@ mixin projectItem(title, content, stack, imageUrl, links)
             "C++, Python",
             "images/Onion-Omega-Preview.png",
             [])
+        +projectItem(
+            "Node.js Web Game (Chaotic-Engine)",
+            "Developed a web game engine using a Node.js server and Socket.io to connect multiple players to a single game world. Client-side rendering is done using HTML5 Canvas, and a custom graphics specification format. A simple, inheritance-based component definition system is used to facilitate the creation of new game objects.",
+            "Typescript, Node.js, Socket.io, Html5 Canvas",
+            "images/ChaoticMP-Preview.png",
+            [{
+                text: "View on Github",
+                href: "https://github.com/BlazingBBQ/Chaotic-Engine",
+            },
+            {
+                text: "Try it out",
+                href: "https://chaoticmp.simoncousineau.com",
+            }])
         +projectItem(
             "Automatic Test Scaffolder (QAssistant)",
             "Developed a VSCode extension that automatically creates test files and scaffolds test cases. Implemented a flexible configuration which allows support for multiple programming languages.",
@@ -85,6 +95,13 @@ mixin projectItem(title, content, stack, imageUrl, links)
     #experience
     +separator("Experience")
     .projects__section-inner
+        +projectItem(
+            "Embedded Software Engineering Intern - Ciena",
+            "Developed python scripts for GDB, including a heap-walking script for 32-bit ARM systems using Musl, a fast and lightweight libc implementation for Linux based operating systems. Productized a memory management tool (DataWatch) by developing user-space application and kernel module code to handle memory allocations. Extended existing exception handler behaviour using PowerPC assembly. Worked closely with experienced engineers to provide resources and support to effectively use on-system debugging tools.",
+            "C, Python, PowerPC Assembly, Linux, GDB",
+            "images/Ciena-Preview.svg",
+            []
+        )
         +projectItem(
             "Cloud Platform Developer - Wind River Systems",
             "Worked with open-source technologies such as Python, Kubernetes, Docker, Helm and StarlingX to develop platform monitoring and analytics for distributed systems. Implemented and configured data processing pipelines to filter, parse and pre-process system logs. Analyzed platform metrics and logs to determine critical information used for platform monitoring and fault management. Tested application changes on various platform configurations and under different conditions to ensure proper functioning even in fault scenarios. Reviewed preliminary notes and findings with experienced engineers in order to ensure all functional requirements were captured and to verify proposed methodologies. ",
